@@ -1,0 +1,86 @@
+/* Regras para o tamanho da caixa */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* Remove o padding padrão */
+ul[class],
+ol[class]{
+    padding: 0;
+
+}
+
+/* Remove a margin padrão */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd{
+    margin: 0;
+
+}
+
+/* Definir body padrões */
+body{
+    min-height: 100%;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Remover estilos de lista em elementos ul, ol com um atributo de classe */
+ul[class],
+ol[class]{
+    list-style: none;
+
+}
+
+/* Um elemento que não tem uma classe get estilos padrão */
+a:not([class]){
+    text-decoration-skip-ink: auto;
+}
+
+/* Torne as imagens mais fáceis de trabalhar */
+img{
+    max-width: 100%;
+    display: block;
+
+}
+
+/* Fluxo natural e ritmo em artigos por padrão */
+article > * + *{
+    margin-top: 1em;
+
+}
+
+/* Herdar fontes para inputs e buttons */
+input,
+button,
+textarea,
+select{
+    font: inherit;
+
+}
+
+/* Remova todas as animações e transições para pessoas que preferem não vê-las */
+@media(prefers-reduced-motion: reduce){
+    *{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+
+    }
+    
+}

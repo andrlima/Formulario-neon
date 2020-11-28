@@ -1,0 +1,53 @@
+ @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap');
+
+body{
+    /*background: #242d3b; */
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+header{
+    background: #000 url("../img/header-fundo.jpg") top center/ cover;
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+    border-bottom: 2px solid #89FCF3;
+    box-shadow: 0 0 10px #89FCF3;
+
+}
+
+.container{
+    background-color: #000;
+    max-width: 660px;
+    max-height: 300px;
+    margin: 0 auto;
+    padding: 0 20px;
+        
+}
+
+header h1{
+    color: #89FCF3;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4em;
+    line-height: 0.8em;
+    text-align: left;
+    transform: skewY(-5deg);
+    padding-bottom: 60px;
+
+    
+
+}
+
+header h1 span{
+    display: block;
+    text-align: right;
+
+}
+
+header p{
+    color: #CCCDCF;
+    font-size: 16px;
+    max-width: 540px;
+    margin: 0 auto;
+}
