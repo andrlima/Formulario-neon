@@ -10,6 +10,7 @@
 
         <link rel = "stylesheet" href = "./css/reset.css" />
         <link rel = "stylesheet" href = "./css/estilo.css" />
+        <link rel = "stylesheet" href = "./css/font.css" />
         
     </head>
 
@@ -19,8 +20,13 @@
 
             <div class = "container">
 
-                <h1> Formulário <spn> NEON </spn></h1>
-                <p> Formulário com efeito de NEON. Usando apenas keyframes do CSS </p>
+
+                <h1> Formulário <span> NEON </span></h1>
+
+                <div id = "txt-header">
+                    <p> Formulário com efeito de NEON. Usando apenas keyframes do CSS </p>
+                </div>
+                
 
             </div>
 
@@ -30,31 +36,22 @@
 
             <div id = "mc_embed_signup">
                 
-                <form action = "" method = "post" id = "form-login" name = "form-login" class = "validate" novalidate>
+                <form action = "" method = "post" id = "form-login" name = "form-login" class = "validate">
 
-                    <div id = "embed-scrol">
+                    <div id = "">
 
-                        <div class = "mc-fild-group">
+                        <div class = "grupo-input">
                             <label for = "email"> E-mail <span class = "asterisk"> * </span> </label>
                             <input type = "email" name = "email" class = "email-val" id = "email" />
                         </div>
 
-                        <div class = "mc-fild-group">
-                            <label for = "nome"> Nome <span clss = "asterisk"> * </span> </label>
-                            <input type = "text" nome = "nome" id = "nome" class = "required" />
-                        </div>
-                        
-                        <div id = "mce-responses" class = "clear">
-                            <div class = "responses" id = "mce-error-response" style = "display:none"> </div>
-                            <div class = "responses" id = "mce-sucess-response" style = "display:none"> </div>
+                        <div class = "grupo-input">
+                            <label for = "senha"> Senha <span class = "asterisk"> * </span> </label>
+                            <input type = "password" name = "senha" id = "senha" class = "required" />
                         </div>
 
-                        <div style = "position: absolute; left: -5000px;" aria-hidden = "true">
-                            <input type = "text" name = "b_ac52e8b1ce2a06907e0091d7c_63bf572981" tabindex = "-1" />                            
-                        </div>
-
-                        <div class = "indicates-required">
-                            <span class = "asterisk"> * </span> Indicador requerido 
+                        <div class = "asterisk-requerido">
+                            <span class = "asterisk"> * </span> Compos obrigatórios!
                         </div>
 
                         <div class = "clear">

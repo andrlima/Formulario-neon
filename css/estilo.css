@@ -1,24 +1,22 @@
- @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap');
+ /* @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap'); */
 
 body{
-    /*background: #242d3b; */
+    background: #242d3b;
     font-family: 'Roboto', sans-serif;
 
 }
 
-
 header{
     background: #000 url("../img/header-fundo.jpg") top center/ cover;
     text-align: center;
-    padding: 50px 0;
+    padding: 30px 0;
     color: #fff;
     border-bottom: 2px solid #89FCF3;
     box-shadow: 0 0 10px #89FCF3;
-
+  
 }
 
 .container{
-    background-color: #000;
     max-width: 660px;
     max-height: 300px;
     margin: 0 auto;
@@ -31,17 +29,17 @@ header h1{
     font-family: 'Permanent Marker', cursive;
     font-size: 4em;
     line-height: 0.8em;
-    text-align: left;
+    text-align: center;
     transform: skewY(-5deg);
     padding-bottom: 60px;
 
-    
 
 }
 
 header h1 span{
     display: block;
     text-align: right;
+    margin-right: 90px;
 
 }
 
@@ -50,4 +48,112 @@ header p{
     font-size: 16px;
     max-width: 540px;
     margin: 0 auto;
+    
+}
+
+header div #txt-header{
+    position: relative;
+    bottom: 30px;
+}
+
+form{
+    background: #151515;
+    border-radius: 15px;
+    border: #89FCF3 2px solid;
+    padding: 30px;
+    margin: -40px 0 50px;
+    font-size: 20px;
+    position: relative;
+    box-shadow: 0px 0px 60px 0px #89FCF3;
+    height: 280px
+    
+}
+
+form .grupo-input{
+    position: relative;
+    width: 350px;
+    height: 80px;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+form label .asterisk{
+    color: #89FCF3;
+    font-size: 0.5em;
+    vertical-align: super;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    padding: 15px;
+    background: #242D3B;
+    color: #fff;
+    transition: 1s;
+    
+}
+
+form input:hover{
+    border: #89FCF3 3px solid;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 60px 0px #89FCF3;
+
+}
+
+form input:focus{
+    outline: none;
+    box-shadow: 0px 10px 30px -20px #89FCF3;
+    filter: contrast(85%);
+
+}
+
+form label{
+    color: #CCCDCF;
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+form .asterisk-requerido{
+    color: #89FCF3;
+    font-size: 0.5em;
+    margin: 10px;
+    text-align: center;
+}
+
+
+form .login{
+    max-width: 300px;
+    height: auto;
+    background: #151515;
+    border: #89FCF3 2px solid;
+    border-radius: 45px;
+    font-weight: bold;
+    line-height: normal;
+    margin:auto;
+
+}
+
+form .login:hover{
+    background: #89FCF3;
+    color: #151515;
+    cursor: pointer;
+ 
+}
+
+
+@media(max-width: 768px){
+    header{
+        padding: 80px 0;
+
+    }
+
+    header h1{
+        font-size: 4em;
+    }
+    
 }
